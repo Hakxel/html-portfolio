@@ -166,3 +166,9 @@ article {
   flex-grow: 1;
   max-width: 5em;
 }
+
+
+.project a > img {
+  max-width: 25em;
+  max-height: 25em;
+}
