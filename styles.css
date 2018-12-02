@@ -1,0 +1,79 @@
+/* General rules */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+  /* outline: 1px solid blue; */
+}
+
+a:link {
+  text-decoration: none; 
+  /* color: blue;  */
+}
+
+ul {  
+  list-style-type: none;
+}
+
+/* Header */
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+}
+
+.top-nav {
+  justify-self: center;
+  /* margin-right: -2em; */
+}
+
+
+.nav-checkbox {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-self: flex-end;
+  margin-right: 0.5em;
+}
+
+.nav-checkbox > label {
+  margin-bottom: 0px;
+}
+
+.nav-pills > li {
+  display: inline;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-right: 0.5em;
+  padding-right: 0.5em;
+  border-right: 1px solid black;
+}
+
+.nav-pills > li:last-child {
+  border-right: none;
+}
+
+
+#music-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+}
+
+.nav-checkbox > p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.9em;
+  color: gray;
+}
