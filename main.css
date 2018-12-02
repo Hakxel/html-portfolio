@@ -1,9 +1,9 @@
 /* General rules */
 
 body {
+  box-sizing: content-box;  
   margin: 0px;
   padding: 0px;
-  box-sizing: content-box;  
 }
 
 a:link {
@@ -19,33 +19,33 @@ ul {
 #header {
   align-items: center;
   display: flex;
-  justify-content: center;
   height: 6vh;
-  margin-top: 5px;
-  padding-bottom: 5px;
+  justify-content: center;
+  margin-top: 1em;
   outline: 1px solid burlywood;
+  padding-bottom: 5px;
 }
 
 .nav-wrapper {
+  align-items: center;
   display: flex;
   justify-items: center;
-  align-items: center;
   width: 100vw;
 }
 
 .nav-logo {
-  display: flex;
-  justify-content: center;
   align-content: center;
+  display: flex;
   flex-grow: 1;
+  justify-content: center;
   max-width: 4em;
   padding-top: 0.4em;
 }
 
 #logo-img {
-  max-width: 2.1em;
-  max-height: 2.1em;
   border-radius: 50%;
+  max-height: 2.1em;
+  max-width: 2.1em;
 }
 
 .nav-items {
@@ -56,11 +56,11 @@ ul {
 
 
 .nav-checkbox {
+  align-items: center;
   display: flex;  
   flex-direction: column;
-  align-items: center;
-  justify-self: flex-end;
   flex-grow: 1;
+  justify-self: flex-end;
   max-width: 4em;
 }
 
@@ -69,12 +69,12 @@ ul {
 }
 
 .nav-pills > li {
+  border-right: 1px solid black;
   display: inline;
-  margin-top: 0.5em;
   margin-bottom: 0.5em;
+  margin-top: 0.5em;
   margin-right: 0.5em;
   padding-right: 0.5em;
-  border-right: 1px solid black;
 }
 
 .nav-pills > li:last-child {
@@ -82,30 +82,75 @@ ul {
 }
 
 #music-toggle {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   flex-direction: column;  
 }
 
 .nav-checkbox > p {
+  color: gray;
+  font-size: 0.9em;
   padding: 0px;
   margin: 0px;
-  font-size: 0.9em;
-  color: gray;
 }
 
 /* Article */
 
 article {
   margin-top: 5px;
+
 }
-.hero-wrapper {
-  height: 90vh;
+
+#hero {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  outline: 1px solid forestgreen;
+}
+
+.hero-left {
+  align-items: center;
+  background-color: rgba(0, 255, 255, 0.5);
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  max-width: 5em;
+  outline: 1px solid darkblue;
+
+  
+}
+.hero-left > img {  
+  margin-top: 1.5em;
+}
+
+#linkedin-icon {
+  max-width: 2.9em;
+  max-height: 2.9em;
+  margin-top: 1em;
+}
+
+#twitter-icon {
+  max-width: 2.7em;
+  max-height: 2.7em;
+}
+
+#github-icon {
+  max-width: 2.5em;
+  max-height: 2.5em;
+  margin-bottom: 1em;
+}
+
+.hero-wrapper {
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: space-around;
+  height: 90vh;
   outline: 1px solid salmon;
+  text-align: center;
   padding-top: 2em;
 }
 
@@ -115,4 +160,9 @@ article {
 
 #intro-phrase {
   text-align: center;
+}
+
+.hero-right {
+  flex-grow: 1;
+  max-width: 5em;
 }
