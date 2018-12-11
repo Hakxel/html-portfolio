@@ -25,13 +25,15 @@
   <body>
     <header id="header">
       <nav class="nav-wrapper top">
-        <div class="nav-logo"><img id="logo-img" src="images/logo-img.jpg" alt="A stylished picture of Asiel" /></div>
+        <div class="nav-logo"><a href="/">
+          <img id="logo-img" src="images/logo-img.jpg" alt="A stylished picture of Asiel" /></a>
+        </div>          
         <div class="nav-items">        
           <ul class="nav nav-pills">
-            <li class="active"><a href="/">Home</a></li>
-            <li class=""><a href="#">Projects</a></li>
-            <li class=""><a href="#">Bio</a></li>
-            <li class=""><a href="#">Blog</a></li>       
+            <li class="active"><a href="#top">Home</a></li>
+            <li class=""><a href="#profile">Projects</a></li>
+            <li class=""><a href="#bio">Bio</a></li>
+            <li class=""><a href="#blog">Blog</a></li>       
           </ul>       
         </div>
         <div class="nav-checkbox">
@@ -43,7 +45,7 @@
         </div>
       </nav>         
     </header>
-    <article class="container-fluid">
+    <article class="container-fluid" id="top">
       <section id="hero">
         <div class="hero-left">
           <a href="https://www.linkedin.com/in/asiel-montes-27b95612a/" target="_blank"><img id="linkedin-icon" src="images/icons-linkedin.svg" alt="Linkedin icon" /></a>
@@ -52,14 +54,12 @@
         </div>
         <div class="hero-wrapper">   
           <div id="intro-phrase">
-            <h4>“Un homme est toujours la proie de ses vérités. Une fois reconnues, il ne saurait s'en détacher.”</h4></div>
+            <h4>“Un homme est toujours la proie de ses vérités. Une fois reconnues, il ne saurait s'en détacher.” -A. Camus</h4></div>
           <div class="hero-image"><img src="images/looking-up.jpeg" alt="An image of Asiel Montes" /></div>
           <h1>Asiel Montes</h1>          
-          <h2>A web developer in the making</h2>         
+          <h2>A full stack web developer</h2>         
         </div>
-        <div class="hero-right">
-
-        </div>
+        <div class="hero-right"></div>
       </section>
       <section id="profile">
         <h3>My Projects</h3>
@@ -82,7 +82,7 @@
               <p>A palindrome detector</p>
             </a>
           </div>
-          <div class="project">
+          <div class="project tribute">
             <a href="https://hakxel.github.io/tribute_page/" target="_blank">
               <img src="images/tribute_jacque_fresco.png" alt="A tribute to Jacque Fresco" />
               <p>A tribute to Jacque Fresco</p>
@@ -94,11 +94,17 @@
               <p>A CLI expense tracker app</p>
             </a>
           </div>
+          <div class="project bullsgame">
+            <a href="https://github.com/Hakxel/bulls-and-cows" target="_blank">
+              <img src="images/bulls-n-cows.png" alt="A guessing game" />
+              <p>A REPL guessing game</p>
+            </a>
+          </div>
         </div>
       </section>
       <section id="bio">
-        <h3>Bio</h3>
         <div class="bio-wrapper">
+            <h3>Bio</h3>
           <div class="bio-text">
             <p>Nulla enim amet dolore est irure anim officia aliqua commodo minim. Culpa nisi aliquip laborum sint labore nulla eiusmod nisi ipsum quis. Cillum deserunt qui voluptate ullamco aliqua ipsum adipisicing minim irure cillum eu. Aute excepteur quis dolor aute. Pariatur fugiat qui laboris aliquip velit exercitation consequat. Ullamco ut fugiat mollit eu aliqua eu exercitation irure velit eu occaecat. Excepteur enim sint aliqua et velit duis.</p>
             <p>Enim elit minim dolor adipisicing officia. Minim in labore esse cillum eiusmod culpa reprehenderit exercitation proident incididunt enim anim in laborum. Occaecat ullamco dolor esse adipisicing ullamco enim irure ex magna sunt exercitation sint deserunt. Non enim consectetur Lorem ad et pariatur est adipisicing. Aute occaecat cillum commodo tempor incididunt laborum. Sint occaecat veniam velit qui.</p>

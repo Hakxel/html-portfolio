@@ -4,6 +4,8 @@ body {
   box-sizing: content-box;  
   margin: 0px;
   padding: 0px;
+  background-image: url(images/dark-blue.jpeg);
+  background-size: auto;
 }
 
 a:link {
@@ -28,9 +30,11 @@ p, a, h5 {
   align-items: center;
   display: flex;
   height: 10vh;
+  width: 100%;
   justify-content: center;
-  background-color: rgba(21, 129, 223, 0.5);
+  background-color: rgb(21, 129, 223);
   border: 2px solid white;
+  position: fixed;
 }
 
 .nav-wrapper {
@@ -119,13 +123,12 @@ p, a, h5 {
 .container-fluid {
   padding: 0px;
   margin: 0px;
+  padding-top: 4em;
   box-sizing: border-box;
 }
 
 #hero {
   align-items: center;
-  background-image: url(images/dark-blue.jpeg);
-  background-size: auto;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
@@ -231,22 +234,19 @@ h3 {
   text-align: center;
   flex-direction: column;
   margin-top: 1px;
-  background-image: url(images/dark-blue.jpeg);
-  background-size: auto;
+  padding-top: 5em;
   max-height: 100%;
   max-width: 100%;
   border: 2px solid gainsboro;   
 }
 
-#profile > h3 {
-  padding-top: 1em;
-}
 .projects-wrapper {
   align-content: center;
   justify-content: space-between;
   display: flex;
   max-width: 100%;
   flex-wrap: wrap;
+  height: 100%;
   
 }
 
@@ -256,10 +256,19 @@ h3 {
 }
 
 .project a > img {
-  max-width: 40vw;
+  max-width: 35vw;
   max-height: 40vw;
   margin: 1em;
   border: 1px solid aliceblue;
+}
+
+.tribute img {
+  height: 24vw ;
+}
+
+.bullsgame img {
+  height: 30em;
+  /* max-width: 50vw; */
 }
 
 .project a > p {
@@ -270,14 +279,16 @@ h3 {
   display: flex;
   text-align: center;
   flex-direction: column;
-  background-image: url(images/dark-blue.jpeg);
-  background-size: auto;
   height: 100%;
   max-width: 100%;
   border: 2px solid gainsboro;
-  padding-top: 1em;
+  /* padding-top: 1em; */
+  margin-top: 1px;
 }
 
+.bio-wrapper {
+  padding-top: 5em;
+}
 .bio-text{
   display: flex;
   justify-content: space-around;
@@ -289,11 +300,10 @@ h3 {
   display: flex;
   text-align: center;
   flex-direction: column;
-  background-image: url(images/dark-blue.jpeg);
-  background-size: auto;
-  height: 100%;
+  height: 100vh;
   max-width: 100%;
   border: 2px solid gainsboro;
-  padding-top: 1em;
+  padding-top: 5em;
+  margin-top: 1px;
 }
 
